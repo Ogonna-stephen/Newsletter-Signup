@@ -4,7 +4,7 @@
   "description": "newsletter webapp\u001b[D\u001b[D\u001b[D app",
   "main": "app.js",
   "scripts": {
-    "build": "netlify deploy --prod"
+    "build": "npm run build"
   },
   "author": "Ogonna",
   "license": "ISC",
