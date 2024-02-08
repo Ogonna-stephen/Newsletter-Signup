@@ -41,7 +41,7 @@ app.post("/", (req, res) => {
         auth: "Ogoo:8e0b5464c5b51471713e0529ddc626a5-us21"
     }
 
-    const request = https.request(url, options, (response) => {
+    request = https.request(url, options, (response) => {
         if(response.statusCode === 200){
             res.sendFile(__dirname + "/success.html");
         }else{
