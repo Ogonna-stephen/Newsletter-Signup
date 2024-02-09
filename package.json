@@ -4,7 +4,8 @@
   "description": "newsletter webapp\u001b[D\u001b[D\u001b[D app",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node run.js",
+    "dev": "nodemon run.js"
   },
   "author": "Ogonna",
   "license": "ISC",

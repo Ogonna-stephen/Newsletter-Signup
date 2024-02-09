@@ -60,13 +60,13 @@ app.post("/failure", (req, res) => {
     res.redirect("/");
 });
 
-app.listen(process.env.PORT || 3000, () => {
-    console.log("server is currently running on port 3000")
-});
+exports.start = () => {
+    app.listen(process.env.PORT || 3000, () => {
+        console.log("server is currently running on port 3000")
+    });
+}
 
-app.use("/.netlify/functions/api", router);
-module.exports.handler = serverless(app);
-
+module.exports = app
 // API KEY
 // 51f70bb3d9cff360a611a861c9f3ebc3-us21
 
